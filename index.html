@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,14 +13,96 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-          .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
-          }
+        }
+
+        .btn-primary {
+            color: #FF4240;
+        }
+
+        .btn-bg {
+            background-color: #FF4240;
+        }
     </style>
 </head>
 
 <body class="font-manrope">
     <header>
+        <nav class="max-w-7xl mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl lg:font-bold lg:text-4xl sm:text-xl"><span
+                            class="btn-primary ">Champions</span>Arena</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex items-center">
+                    <a class="btn-bg flex items-center px-3 py-2 lg:px-5 lg:py-3 rounded-xl text-white">
+                        <img class="hidden lg:inline mr-2" src="images/search.png" alt="Search">
+                        Get Tickets
+                    </a>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+
+        <banner class="max-w-7xl mx-auto relative">
+            <div class="carousel w-full relative">
+                <!-- first slide -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/1.png" class="w-full h-auto max-h-70" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/1.png" class="w-full h-auto max-h-70" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- special details -->
+                <div class="absolute -bottom-35 lg:bottom-20 right-5 left-2/4 bg-black p-4 text-left rounded-xl">
+                    <h4 class="text-white lg:text-2xl font-bold mb-3 lg:mb-5">Meet All the Heroes from the field</h4>
+                    <p class="text-white text-sm lg:text-base">Meet the Heroes of the Champions Arena, each with a unique playstyle and an unwavering commitment to
+                        mastering their craft. From precision marksmen to tactical strategists, our players embody the
+                        spirit of competition, pushing the boundaries of what's possible in the gaming universe.</p>
+                </div>
+                
+            </div>
+        </banner>
+        
 
     </header>
     <main>
